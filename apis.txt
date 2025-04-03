@@ -1,0 +1,38 @@
+API Endpoints
+1. User Authentication & Management
+POST /api/auth/register
+Registers a new user.
+
+POST /api/auth/login
+Authenticates a user and provides a token.
+
+GET /api/users/profile
+Fetches the profile of the logged-in user.
+
+2. Product Management
+GET /api/products
+Fetches all products with filtering and sorting options.
+
+POST /api/products
+Adds a new product (Admin only).
+
+3. Cart Management
+GET /api/cart
+Retrieves the current user's cart.
+
+POST /api/cart
+Adds or updates an item in the cart.
+
+4. Order Management
+POST /api/orders
+Places an order based on the user's cart.
+
+GET /api/orders/:id
+Fetches details of a specific order.
+
+5. Reviews
+POST /api/reviews/:product_id
+Adds a review for a product.
+
+GET /api/reviews/:product_id
+Fetches all reviews for a product.
